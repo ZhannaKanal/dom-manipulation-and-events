@@ -9,3 +9,4 @@ Browser APIs expose data from the browser. You can access and manipulate this da
 Also provide access to functionalities such as handling events, working with storage, communicating with network.
 Some examples of commonly used Browser APIs include
 The DOM API, which you can use to manipulate HTML elements, their styles and attributes.
+The Storage API, to store data locally on the user's device
