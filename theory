@@ -1,3 +1,7 @@
 What is an API? What are Web APIs?
 Application Programming Interface
 set of rules which allow software applications to communicate with each other and exchange data efficiently
+Types of API:
+Web APIs are specifically desighned for web applications
+there are different types of web api for client-side JS development
+but they are not part of JS
