@@ -4,4 +4,5 @@ set of rules which allow software applications to communicate with each other an
 Types of API:
 Web APIs are specifically desighned for web applications
 there are different types of web api for client-side JS development
-but they are not part of JS
+but they are not part of JS itself
+Browser APIs expose data from the browser. You can access and manipulate this data using JS
