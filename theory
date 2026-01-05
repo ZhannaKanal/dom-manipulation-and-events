@@ -6,3 +6,4 @@ Web APIs are specifically desighned for web applications
 there are different types of web api for client-side JS development
 but they are not part of JS itself
 Browser APIs expose data from the browser. You can access and manipulate this data using JS
+Also provide access to functionalities such as handling events, working with storage, communicating with network.
