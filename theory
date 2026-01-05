@@ -11,3 +11,6 @@ Some examples of commonly used Browser APIs include
 The DOM API, which you can use to manipulate HTML elements, their styles and attributes.
 The Storage API, to store data locally on the user's device
 You can also work with other types of elements, such as video and audio
+
+Third-party APIs:
+Google Maps API, you can use to display interactive maps on your website.
