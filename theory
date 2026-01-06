@@ -41,3 +41,4 @@ The html element has two children: head and body
 The head element contains metadata about the document, provides essential information about the webpage 
 The body element contains the visible content of the webpage
 You can access these elements in JS, you can use getElementById() and querySelector() methods. These methods are web APIs, they provide standardized ways to interact with the DOM using JS
+With getELementById(), you can access by id, its unique in every element, return only one Element Object
