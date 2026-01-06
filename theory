@@ -39,3 +39,4 @@ HTML document is the root node of DOM hierarchy
     It has one child node, the html element. This is the root element of the HTML document, all other nodes descend from it
 The html element has two children: head and body
 The head element contains metadata about the document, provides essential information about the webpage 
+The body element contains the visible content of the webpage
