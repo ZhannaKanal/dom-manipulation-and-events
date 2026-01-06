@@ -24,3 +24,13 @@ programming interface that lets us interact with HTML documents
 With DOM you can modify, add, delete elements on a webpage
 You can make your website interactive by making elements listen to and respond to events
 In the DOM, an HTML document is represented as a tree of nodes. Each node represents an HTML element from the HTML document
+Basic DOM structure
+Document
+--------
+HTML
+--------
+- Head
+ - Title
+- Body
+ - H1
+ - H2 
