@@ -47,3 +47,4 @@ querySelector() is broader than getElementById(), you can get the first element 
 <section></section>
 const sectionEl = document.querySelector("section")
 if you want select an element by its class name, you can use (.)
+const highlightEl = document.querySelector(".highlight")
