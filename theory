@@ -46,3 +46,4 @@ const container = document.getElementById("container");
 querySelector() is broader than getElementById(), you can get the first element in the HTML document that matches the CSS selector passed as argument
 <section></section>
 const sectionEl = document.querySelector("section")
+if you want select an element by its class name, you can use (.)
