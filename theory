@@ -45,3 +45,4 @@ With getELementById(), you can access by id, its unique in every element, return
 const container = document.getElementById("container");
 querySelector() is broader than getElementById(), you can get the first element in the HTML document that matches the CSS selector passed as argument
 <section></section>
+const sectionEl = document.querySelector("section")
