@@ -43,3 +43,5 @@ The body element contains the visible content of the webpage
 You can access these elements in JS, you can use getElementById() and querySelector() methods. These methods are web APIs, they provide standardized ways to interact with the DOM using JS
 With getELementById(), you can access by id, its unique in every element, return only one Element Object
 const container = document.getElementById("container");
+querySelector() is broader than getElementById(), you can get the first element in the HTML document that matches the CSS selector passed as argument
+<section></section>
