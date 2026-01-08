@@ -82,4 +82,20 @@ if tag -> just "div"
 if class -> just ".className"
 if id -> just "#id"
 if el with specific attribute, like links -> "a[href='https://www.freecodecamp.org/']"
-
+you can also use more complex CSS selectors -> "ul.ingredients li"
+<ul class="ingredients">
+  <li>Flour</li>
+  <li>Cheese</li>
+  <li>Water</li>
+</ul>
+const matches = document.querySelectorAll("ul.ingredients li")
+will return // NodeList(3)
+{
+  0: `<li>Flour</li>`,
+  1: `<li>Cheese</li>`,
+  2: `<li>Water</li>`,
+  length: 3,
+}
+you can log this nodelist, and also check the length, output will be integer
+you can also access the individual elements, by its indices. matches[0] -> <li>Flour</li>
+you can also iterate over the elements with for loop
