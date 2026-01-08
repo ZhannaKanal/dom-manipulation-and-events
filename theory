@@ -48,3 +48,6 @@ querySelector() is broader than getElementById(), you can get the first element 
 const sectionEl = document.querySelector("section")
 if you want select an element by its class name, you can use (.)
 const highlightEl = document.querySelector(".highlight")
+
+How to DOM Nodes Exist Relative to each other in the DOM Tree?
+DOM Nodes and their relationtiop in the DOM Tree
