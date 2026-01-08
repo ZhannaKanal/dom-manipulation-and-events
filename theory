@@ -75,3 +75,5 @@ An ancestor nodes is an element that is higher up in the DOM tree hierarchy than
 What is the querySelectorAll() method. 
 You can use this method to get a list of all the DOM elements that matches a specific CSS Selector.
 document.querySelectorAll(selectors);
+the srgument should be a valid CSS Selector, otherwise will be SyntaxError
+querySelectorAll() returns a NodeList object, a collection of nodes that match the specified CSS Selector.
