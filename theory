@@ -69,4 +69,5 @@ The root of the DOM tree is the html element, its top-level container for all th
 body- parent of the paragraph while paragraph is the child of the body
 We have parent and child nodes, we also have sibling nodes. Sibling nodes are elements that share the same parent.
 The two list item elements share the same unordered list parent, so they're siblings
-We also have indirect relationships across different levels in the hierarchy. In example li els are descendants of the body, since they are indirectly contained within it
+We also have indirect relationships across different levels in the hierarchy. Descendant nodes are elements that are contained within another element. In example li elements are descendants of the body, since they are indirectly contained within it.
+An ancestor nodes is an element that is higher up in the DOM tree hierarchy than another element. body is ancestor of the list item li elements.
