@@ -66,3 +66,4 @@ DOM Nodes also have direct and indirect relationships with one another.
   </body>
 </html>
 The root of the DOM tree is the html element, its top-level container for all the content of an HTML document. All other nodes are descendants of this root node
+body- parent of the paragraph while paragraph is the child of the body
