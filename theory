@@ -51,3 +51,18 @@ const highlightEl = document.querySelector(".highlight")
 
 How to DOM Nodes Exist Relative to each other in the DOM Tree?
 DOM Nodes and their relationtiop in the DOM Tree
+DOM Nodes also have direct and indirect relationships with one another.
+<html>
+  <head>
+    <title>DOM Tree Example</title>
+  </head>
+  <body>
+    <h1>Heading 1</h1>
+    <p>Paragraph 1</p>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ul>
+  </body>
+</html>
+
