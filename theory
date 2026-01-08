@@ -77,3 +77,9 @@ You can use this method to get a list of all the DOM elements that matches a spe
 document.querySelectorAll(selectors);
 the srgument should be a valid CSS Selector, otherwise will be SyntaxError
 querySelectorAll() returns a NodeList object, a collection of nodes that match the specified CSS Selector.
+This list will contain one Element object for each element that matches the CSS Selectors. If no matches are found, the list will be empty.
+if tag -> just "div"
+if class -> just ".className"
+if id -> just "#id"
+if el with specific attribute, like links -> "a[href='https://www.freecodecamp.org/']"
+
