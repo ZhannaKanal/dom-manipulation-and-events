@@ -103,3 +103,6 @@ after running this code the html structure will be
   </ul>
 </div>
 new nodes were created and added dynamically to the DOM after the string was parsed
+But you shouldn't use it if you won't have full control over the string
+if string entered by user, you shouldn't use innerHTML, cause the user might insert malicious content into your website,
+cause of this, it's usually recommended to use textContent instead, to insert plain text
