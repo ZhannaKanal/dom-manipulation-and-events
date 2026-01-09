@@ -111,3 +111,4 @@ another way to create new nodes is by using the createElement() method.
 with this method, you can create a new element by specifying its tag name.
 for example, if you want to create an image element, you would pass the img tag as a string when calling this method
 document.createElement("img");
+const img = document.createElement("img") -> you assign this object to variable
