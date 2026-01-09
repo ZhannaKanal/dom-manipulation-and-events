@@ -1,57 +1,39 @@
-What is an API? What are Web APIs?
-Application Programming Interface
-set of rules which allow software applications to communicate with each other and exchange data efficiently
-Types of API:
-Web APIs are specifically desighned for web applications
-there are different types of web api for client-side JS development
-but they are not part of JS itself
-Browser APIs expose data from the browser. You can access and manipulate this data using JS
-Also provide access to functionalities such as handling events, working with storage, communicating with network.
-Some examples of commonly used Browser APIs include
-The DOM API, which you can use to manipulate HTML elements, their styles and attributes.
-The Storage API, to store data locally on the user's device
-You can also work with other types of elements, such as video and audio
-
-Third-party APIs:
-Google Maps API, you can use to display interactive maps on your website.
-weather APIs
-social media APIs 
-payment APIstranslation APIs
-
-What is DOM?
-Document Object Model
-programming interface that lets us interact with HTML documents
-With DOM you can modify, add, delete elements on a webpage
-You can make your website interactive by making elements listen to and respond to events
-In the DOM, an HTML document is represented as a tree of nodes. Each node represents an HTML element from the HTML document
-Basic DOM structure
-Document
---------
-HTML
---------
-- Head
- - Title
-- Body
- - H1
- - H2 
-
-HTML document is the root node of DOM hierarchy
-    It has one child node, the html element. This is the root element of the HTML document, all other nodes descend from it
-The html element has two children: head and body
-The head element contains metadata about the document, provides essential information about the webpage 
-The body element contains the visible content of the webpage
-You can access these elements in JS, you can use getElementById() and querySelector() methods. These methods are web APIs, they provide standardized ways to interact with the DOM using JS
-With getELementById(), you can access by id, its unique in every element, return only one Element Object
-const container = document.getElementById("container");
-querySelector() is broader than getElementById(), you can get the first element in the HTML document that matches the CSS selector passed as argument
+What is an API? What are Web APIs? Application Programming Interface set of
+rules which allow software applications to communicate with each other and
+exchange data efficiently Types of API: Web APIs are specifically desighned for
+web applications there are different types of web api for client-side JS
+development but they are not part of JS itself Browser APIs expose data from the
+browser. You can access and manipulate this data using JS Also provide access to
+functionalities such as handling events, working with storage, communicating
+with network. Some examples of commonly used Browser APIs include The DOM API,
+which you can use to manipulate HTML elements, their styles and attributes. The
+Storage API, to store data locally on the user's device You can also work with
+other types of elements, such as video and audio Third-party APIs: Google Maps
+API, you can use to display interactive maps on your website. weather APIs
+social media APIs payment APIstranslation APIs What is DOM? Document Object
+Model programming interface that lets us interact with HTML documents With DOM
+you can modify, add, delete elements on a webpage You can make your website
+interactive by making elements listen to and respond to events In the DOM, an
+HTML document is represented as a tree of nodes. Each node represents an HTML
+element from the HTML document Basic DOM structure Document -------- HTML
+-------- - Head - Title - Body - H1 - H2 HTML document is the root node of DOM
+hierarchy It has one child node, the html element. This is the root element of
+the HTML document, all other nodes descend from it The html element has two
+children: head and body The head element contains metadata about the document,
+provides essential information about the webpage The body element contains the
+visible content of the webpage You can access these elements in JS, you can use
+getElementById() and querySelector() methods. These methods are web APIs, they
+provide standardized ways to interact with the DOM using JS With
+getELementById(), you can access by id, its unique in every element, return only
+one Element Object const container = document.getElementById("container");
+querySelector() is broader than getElementById(), you can get the first element
+in the HTML document that matches the CSS selector passed as argument
 <section></section>
-const sectionEl = document.querySelector("section")
-if you want select an element by its class name, you can use (.)
-const highlightEl = document.querySelector(".highlight")
-
-How to DOM Nodes Exist Relative to each other in the DOM Tree?
-DOM Nodes and their relationtiop in the DOM Tree
-DOM Nodes also have direct and indirect relationships with one another.
+const sectionEl = document.querySelector("section") if you want select an
+element by its class name, you can use (.) const highlightEl =
+document.querySelector(".highlight") How to DOM Nodes Exist Relative to each
+other in the DOM Tree? DOM Nodes and their relationtiop in the DOM Tree DOM
+Nodes also have direct and indirect relationships with one another.
 <html>
   <head>
     <title>DOM Tree Example</title>
@@ -65,40 +47,44 @@ DOM Nodes also have direct and indirect relationships with one another.
     </ul>
   </body>
 </html>
-The root of the DOM tree is the html element, its top-level container for all the content of an HTML document. All other nodes are descendants of this root node
-body- parent of the paragraph while paragraph is the child of the body
-We have parent and child nodes, we also have sibling nodes. Sibling nodes are elements that share the same parent.
-The two list item elements share the same unordered list parent, so they're siblings
-We also have indirect relationships across different levels in the hierarchy. Descendant nodes are elements that are contained within another element. In example li elements are descendants of the body, since they are indirectly contained within it.
-An ancestor nodes is an element that is higher up in the DOM tree hierarchy than another element. body is ancestor of the list item li elements.
-
-What is the querySelectorAll() method. 
-You can use this method to get a list of all the DOM elements that matches a specific CSS Selector.
-document.querySelectorAll(selectors);
-the srgument should be a valid CSS Selector, otherwise will be SyntaxError
-querySelectorAll() returns a NodeList object, a collection of nodes that match the specified CSS Selector.
-This list will contain one Element object for each element that matches the CSS Selectors. If no matches are found, the list will be empty.
-if tag -> just "div"
-if class -> just ".className"
-if id -> just "#id"
-if el with specific attribute, like links -> "a[href='https://www.freecodecamp.org/']"
-you can also use more complex CSS selectors -> "ul.ingredients li"
+The root of the DOM tree is the html element, its top-level container for all
+the content of an HTML document. All other nodes are descendants of this root
+node body- parent of the paragraph while paragraph is the child of the body We
+have parent and child nodes, we also have sibling nodes. Sibling nodes are
+elements that share the same parent. The two list item elements share the same
+unordered list parent, so they're siblings We also have indirect relationships
+across different levels in the hierarchy. Descendant nodes are elements that are
+contained within another element. In example li elements are descendants of the
+body, since they are indirectly contained within it. An ancestor nodes is an
+element that is higher up in the DOM tree hierarchy than another element. body
+is ancestor of the list item li elements. What is the querySelectorAll() method.
+You can use this method to get a list of all the DOM elements that matches a
+specific CSS Selector. document.querySelectorAll(selectors); the srgument should
+be a valid CSS Selector, otherwise will be SyntaxError querySelectorAll()
+returns a NodeList object, a collection of nodes that match the specified CSS
+Selector. This list will contain one Element object for each element that
+matches the CSS Selectors. If no matches are found, the list will be empty. if
+tag -> just "div" if class -> just ".className" if id -> just "#id" if el with
+specific attribute, like links -> "a[href='https://www.freecodecamp.org/']" you
+can also use more complex CSS selectors -> "ul.ingredients li"
 <ul class="ingredients">
   <li>Flour</li>
   <li>Cheese</li>
   <li>Water</li>
 </ul>
-const matches = document.querySelectorAll("ul.ingredients li")
-will return // NodeList(3)
-{
-  0: `<li>Flour</li>`,
-  1: `<li>Cheese</li>`,
-  2: `<li>Water</li>`,
-  length: 3,
-}
-you can log this nodelist, and also check the length, output will be integer
-you can also access the individual elements, by its indices. matches[0] -> <li>Flour</li>
-you can also iterate over the elements with for loop
-
-Create New Nodes using innerHTML and createElement()
-You can create nodes with innerHTML and createElement()
+const matches = document.querySelectorAll("ul.ingredients li") will return //
+NodeList(3) { 0: `
+<li>Flour</li>
+`, 1: `
+<li>Cheese</li>
+`, 2: `
+<li>Water</li>
+`, length: 3, } you can log this nodelist, and also check the length, output
+will be integer you can also access the individual elements, by its indices.
+matches[0] ->
+<li>Flour</li>
+you can also iterate over the elements with for loop Create New Nodes using
+innerHTML and createElement() You can create nodes with innerHTML and
+createElement() innerHTML is a property of Element objects that you can use to
+set their HTML markup. With innerHTML, you can set the HTML structure of an
+existing element with a string, creating all the necessary nodes.
