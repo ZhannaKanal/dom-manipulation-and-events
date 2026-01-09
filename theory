@@ -115,3 +115,9 @@ const img = document.createElement("img") -> you assign this object to variable
 createElement() returns a new HTMLElement object if the document is an HTMLDocument. Else, returns an Element object.
 Once you have this new element ready, you can add it to the DOM as a child of another existing element using the appendChild(),
 or you can insert it at a specific location using other methods.
+const container = document.getElementById("container");
+const img = document.createElement("img");
+img.src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg";
+img.alt = "A slice of lasagna on a plate.";
+container.appendChild(img);
+creating nodes with innerHTML and createElement() allows you to dynamically manipulate the structure and content of your websited.
