@@ -83,8 +83,23 @@ NodeList(3) { 0: `
 will be integer you can also access the individual elements, by its indices.
 matches[0] ->
 <li>Flour</li>
-you can also iterate over the elements with for loop Create New Nodes using
+you can also iterate over the elements with for loop
+
+Create New Nodes using
 innerHTML and createElement() You can create nodes with innerHTML and
-createElement() innerHTML is a property of Element objects that you can use to
+createElement() 
+innerHTML is a property of Element objects that you can use to
 set their HTML markup. With innerHTML, you can set the HTML structure of an
 existing element with a string, creating all the necessary nodes.
+<div id = "container"> </div>
+const container = document.getElementById("container");
+container.innerHTML = "<ul><li>Cheese</li><li>Tomato</li></ul>"
+we will set the innerHTML of this element to an unordered list
+after running this code the html structure will be 
+<div id="container">
+  <ul>
+    <li>Cheese</li>
+    <li>Tomato</li>
+  </ul>
+</div>
+new nodes were created and added dynamically to the DOM after the string was parsed
