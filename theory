@@ -112,3 +112,6 @@ with this method, you can create a new element by specifying its tag name.
 for example, if you want to create an image element, you would pass the img tag as a string when calling this method
 document.createElement("img");
 const img = document.createElement("img") -> you assign this object to variable
+createElement() returns a new HTMLElement object if the document is an HTMLDocument. Else, returns an Element object.
+Once you have this new element ready, you can add it to the DOM as a child of another existing element using the appendChild(),
+or you can insert it at a specific location using other methods.
