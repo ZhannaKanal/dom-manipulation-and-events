@@ -106,3 +106,6 @@ new nodes were created and added dynamically to the DOM after the string was par
 But you shouldn't use it if you won't have full control over the string
 if string entered by user, you shouldn't use innerHTML, cause the user might insert malicious content into your website,
 cause of this, it's usually recommended to use textContent instead, to insert plain text
+
+another way to create new nodes is by using the createElement() method.
+with this method, you can create a new element by specifying its tag name.
