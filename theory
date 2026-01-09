@@ -99,3 +99,6 @@ will return // NodeList(3)
 you can log this nodelist, and also check the length, output will be integer
 you can also access the individual elements, by its indices. matches[0] -> <li>Flour</li>
 you can also iterate over the elements with for loop
+
+Create New Nodes using innerHTML and createElement()
+You can create nodes with innerHTML and createElement()
