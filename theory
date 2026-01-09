@@ -121,3 +121,13 @@ img.src = "https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg";
 img.alt = "A slice of lasagna on a plate.";
 container.appendChild(img);
 creating nodes with innerHTML and createElement() allows you to dynamically manipulate the structure and content of your websited.
+
+Difference between innerText, textContent, innerHTML
+innerText represents the visible text content of the HTML element and its descendants, this property doesn't include hidden text or HTML tags, only rendered text.
+<div id="container">
+  <p>Hello, World!</p>
+  <p>I'm learning JavaScript</p>
+</div>
+const container = document.getElementById("container");
+console.log(container.innerText); // Hello, World! and I'm learning
+property returns a string with the text contained within the element. If child element is hidden, its text wont be visible
