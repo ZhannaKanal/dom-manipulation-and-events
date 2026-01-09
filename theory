@@ -135,3 +135,4 @@ property returns a string with the text contained within the element. If child e
 difference between innerText and textContent is that textContent always returns the full text content and HTML element and its descendents, regardless of whether it's visible or hidden
 textContent will also include the content of elements like script and style
 If you try to replace the value of textContent on a node, it will remove all its child nodes and replace them with a single text node containing the new string
+Difference between innerText, textContent, innerHTML - with innerHTML you can set the inner HTML content of an element. This is helpful for injecting new HTML into the DOM dynamically.
