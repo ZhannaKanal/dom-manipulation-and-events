@@ -153,3 +153,6 @@ const sectionEl = document.getElementById("example-section");
 const lastParagraph = document.querySelector("#example-section p:last-of-type");
 last-of-type -> pseudo-class to select the last element inside section element
 sectionEl.removeChild(lastParagraph)
+
+Navigator Window and Document interfaces
+An interface is a collection of methods and properties that define a particular object
