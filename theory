@@ -171,3 +171,13 @@ you can use location without window, like
 console.log(location)-> results will be same as window.location
 The Document interface represents the DOM document that is displayed in the browser window. It provides methods and properties for interacting with the DOM, such as selecting elements, creating new elements, and modifying the content of elements
 console.log(document.children)-> result will be HTMLCollection object that contains all the child elements of the document
+
+add Attributes with setAttributes()
+setAttribute() method to add attributes to your HTML elements
+Syntax
+setAttribute(attribute, value);
+<p id="para">I am a paragraph</p>
+to add a class attribute we need to access that p element then use setAttribute()
+const paragra = document.getElementById("para")
+paragra.setAttribute("class", "my-class")
+console.log(${paragra.outerHTML}) ->   <p id="para" class="my-class">I am a paragraph</p>
