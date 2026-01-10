@@ -147,3 +147,9 @@ dessertList.appendChild(newItem) -> but last added el is empty
 to add text content to the new list item element, you can use the textContent
 newItem.textContent = "Cookies"
 dessertList.appendChild(newItem)
+The removeChild() method 
+parentNode.removeChild(childNode)
+const sectionEl = document.getElementById("example-section");
+const lastParagraph = document.querySelector("#example-section p:last-of-type");
+last-of-type -> pseudo-class to select the last element inside section element
+sectionEl.removeChild(lastParagraph)
