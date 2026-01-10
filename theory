@@ -136,3 +136,8 @@ difference between innerText and textContent is that textContent always returns 
 textContent will also include the content of elements like script and style
 If you try to replace the value of textContent on a node, it will remove all its child nodes and replace them with a single text node containing the new string
 Difference between innerText, textContent, innerHTML - with innerHTML you can set the inner HTML content of an element. This is helpful for injecting new HTML into the DOM dynamically.
+
+Add and Remove nodes from the DOM with appendChild() and removeChild()
+The appendChild() method is used to add a node to the end of the list of children of a specified parent node.
+Syntax
+parentNode.appendChild(newNode);
