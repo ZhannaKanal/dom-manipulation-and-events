@@ -156,3 +156,7 @@ sectionEl.removeChild(lastParagraph)
 
 Navigator Window and Document interfaces
 An interface is a collection of methods and properties that define a particular object
+The Navigator interface provides information about the browser environment, such as the user agent string, the platform and the version of the browser.
+A user agent string is a text that defines the browser and operating system being used
+console.log(navigator.userAgent) -> result will be string that contains information about browser and operating system that being used
+result's like -> Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
