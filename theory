@@ -143,4 +143,7 @@ Syntax
 parentNode.appendChild(newNode);
 const dessertList = document.getElementById("desserts");
 const newItem = dessertsList.createElement("li");
+dessertList.appendChild(newItem) -> but last added el is empty
+to add text content to the new list item element, you can use the textContent
+newItem.textContent = "Cookies"
 dessertList.appendChild(newItem)
