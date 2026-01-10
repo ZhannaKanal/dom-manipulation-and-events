@@ -169,3 +169,5 @@ console.log(window.location) -> information about the current URL of the browser
 Mostly you wont need to interact with the Window interface directly, as it's automatically available in the global scope
 you can use location without window, like
 console.log(location)-> results will be same as window.location
+The Document interface represents the DOM document that is displayed in the browser window. It provides methods and properties for interacting with the DOM, such as selecting elements, creating new elements, and modifying the content of elements
+console.log(document.children)-> result will be HTMLCollection object that contains all the child elements of the document
