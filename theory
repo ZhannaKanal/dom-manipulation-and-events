@@ -163,3 +163,6 @@ result's like -> Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537
 Another useful property of Navigator is language property, which returns the lanuage of the browser. You can use it when to display content in the user's preferred language
 console.log(navigator.language) -> result will be string like en-US
 
+The Window interface represents the browser window that contains the DOM document. It provides methods and properties for interacting with the browser window, such as resizing the window, opening new window, and navigating to different URLs
+console.log(window.innerWidth) -> like 800 in pixels
+console.log(window.location) -> information about the current URL of the browser window, result will be object such as protocol, hostname, pathname
