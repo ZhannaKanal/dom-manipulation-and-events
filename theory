@@ -181,3 +181,8 @@ to add a class attribute we need to access that p element then use setAttribute(
 const paragra = document.getElementById("para")
 paragra.setAttribute("class", "my-class")
 console.log(${paragra.outerHTML}) ->   <p id="para" class="my-class">I am a paragraph</p>
+or you can update existing attr to new one
+const pEl = document.querySelector(".my-class");
+pEl.setAttribute("class", "example")
+console.log(${pEl.outerHTML})
+if you were buildinf image gallery, you might need to update src attr of image element, when user clicks on a thumbnail
