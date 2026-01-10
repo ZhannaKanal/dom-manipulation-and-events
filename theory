@@ -160,3 +160,6 @@ The Navigator interface provides information about the browser environment, such
 A user agent string is a text that defines the browser and operating system being used
 console.log(navigator.userAgent) -> result will be string that contains information about browser and operating system that being used
 result's like -> Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+Another useful property of Navigator is language property, which returns the lanuage of the browser. You can use it when to display content in the user's preferred language
+console.log(navigator.language) -> result will be string like en-US
+
