@@ -220,3 +220,4 @@ const input = document.getElementById("input");
 input.addEventListener("input", ()=>{
   console.log(input.value)
 })
+There are common events include mouseover, mouseout, keydown, keyup, submit
