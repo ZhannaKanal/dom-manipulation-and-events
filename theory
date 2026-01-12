@@ -194,3 +194,4 @@ Event object has a number of properties that might be helpful, properties availa
 type property - reveals the type of event that triggered the payload, such as "keydown"/"click".
 These values will correspond to the same values you might pass to addEventListener(), where you can capture and utilize the Event object.
 target property - reference to whatever object triggered the event. This will be sort of HTML element object, or the Document/ Window objects. But it can be also something more specific, like an AudioContext.
+Event also have methods which are functions exposed as properties on the object. One commonly used method is preventDefault(), which prevents the default behavior of the event when called.
