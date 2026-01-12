@@ -191,3 +191,5 @@ Event object
 is a payload that triggers when a user interact with your web page in some way. 
 These interactions can be anything from clicking on a button or focusing an input to shaking their mobile device.
 Event object has a number of properties that might be helpful, properties available depend on the event that triggered this payload.
+type property - reveals the type of event that triggered the payload, such as "keydown"/"click".
+These values will correspond to the same values you might pass to addEventListener(), where you can capture and utilize the Event <object data="" type="" class=""></object>
