@@ -186,3 +186,5 @@ const pEl = document.querySelector(".my-class");
 pEl.setAttribute("class", "example")
 console.log(${pEl.outerHTML})
 if you were buildinf image gallery, you might need to update src attr of image element, when user clicks on a thumbnail
+
+Event object
