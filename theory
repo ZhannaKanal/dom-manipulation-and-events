@@ -214,3 +214,9 @@ This method is automatically called whenever the event you're listening for occu
 <button id="btn">Show alert</button>
 const btn = document.getElementById("btn");
 btn.addEventListener("click", ()=> alert("You cliked the button"))
+
+<input type="text" id="input" placeholder="Type something" />
+const input = document.getElementById("input");
+input.addEventListener("input", ()=>{
+  console.log(input.value)
+})
