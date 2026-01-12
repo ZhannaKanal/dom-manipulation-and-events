@@ -198,3 +198,8 @@ Event also have methods which are functions exposed as properties on the object.
 If you want handle form submissions yourself, for example, you might call preventDefault() to keep the browser from trying to submit the from data as a POST request. 
 stopPropagation() method - prevents the event from bubbling up or propagating to parent elements.
 FetchEvent - have a request property to contain the request that triggered the event.
+
+addEventListener() method
+is used to listen for events. It takes two arguments: the event you want to listen for and a function that will be called when the event occurs
+Syntax:
+element.addEventListener("event", listener);
