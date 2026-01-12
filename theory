@@ -203,3 +203,6 @@ addEventListener() method
 is used to listen for events. It takes two arguments: the event you want to listen for and a function that will be called when the event occurs
 Syntax:
 element.addEventListener("event", listener);
+element is the HTML element to monitor for events
+event specifies the type of event to listen for, such as "click"
+The listener is an object that will recieve the notification when the event occurs. this will be a function that you define to handle the event.
