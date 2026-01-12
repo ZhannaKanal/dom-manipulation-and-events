@@ -188,3 +188,5 @@ console.log(${pEl.outerHTML})
 if you were buildinf image gallery, you might need to update src attr of image element, when user clicks on a thumbnail
 
 Event object
+is a payload that triggers when a user interact with your web page in some way. 
+These interactions can be anything from clicking on a button or focusing an input to shaking their mobile device.
