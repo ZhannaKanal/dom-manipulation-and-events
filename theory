@@ -206,3 +206,11 @@ element.addEventListener("event", listener);
 element is the HTML element to monitor for events
 event specifies the type of event to listen for, such as "click"
 The listener is an object that will recieve the notification when the event occurs. this will be a function that you define to handle the event.
+element.addEventListener("click", ()=>{})
+the listener argument can also be null, or it can be an object tha uses the EventListener interface.
+EventListener defines a single method called handleEvent().
+This method is automatically called whenever the event you're listening for occurs. Using this interface allows same object to handle multiple events if needed.
+
+<button id="btn">Show alert</button>
+const btn = document.getElementById("btn");
+btn.addEventListener("click", ()=> alert("You cliked the button"))
