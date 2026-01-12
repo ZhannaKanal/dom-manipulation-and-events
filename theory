@@ -190,3 +190,4 @@ if you were buildinf image gallery, you might need to update src attr of image e
 Event object
 is a payload that triggers when a user interact with your web page in some way. 
 These interactions can be anything from clicking on a button or focusing an input to shaking their mobile device.
+Event object has a number of properties that might be helpful, properties available depend on the event that triggered this payload.
