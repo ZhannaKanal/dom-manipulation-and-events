@@ -221,3 +221,7 @@ input.addEventListener("input", ()=>{
   console.log(input.value)
 })
 There are common events include mouseover, mouseout, keydown, keyup, submit
+
+removeEventListener() method
+is used to remove an event listener that was previously added to an element using the addEventListener() method.
+Useful when you want to stop listening for a particular event on an element.
