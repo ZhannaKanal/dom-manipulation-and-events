@@ -231,3 +231,4 @@ There is also an additional optional third argument that can be passed to the re
 The options is an object that specifies the options for the event listener, such as whether the event listener should be passive or once.
 The useCapture is a boolean value that specifies whether the event should be captured during the event propagination phase.
 Most of time you will only need to pass the event and listener arguments
+We might use the removeEventListener() method in a real-world application, when modal is closed or when a user logs out
