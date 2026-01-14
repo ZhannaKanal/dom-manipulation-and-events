@@ -251,3 +251,6 @@ Its better to use addEventListener()
 
 Manipulate styles using Element.style and Element.classList
 The Element.style property is a read-only property that represents the inline style of an element. You can use this property to get or set the style of an element.
+<p id="para">This is a para</p>
+const paraEl = document.getElementById("para")
+paraEl.style.color = "red"
