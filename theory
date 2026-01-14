@@ -246,3 +246,5 @@ another way to use inline event handlers is to call a function that is defined i
 </script>
 Inline event handlers can only be used to attach one event listener to an element. If you want to attach multiple event listeners to the same element, you will need to use addEvenListener().
 Inline event handlers mix HTML and JS code together, which can make your code harder to rean and maintain.
+Inline event handlers are not recommended for use in modern JS.
+Its better to use addEventListener()
