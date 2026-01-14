@@ -248,3 +248,6 @@ Inline event handlers can only be used to attach one event listener to an elemen
 Inline event handlers mix HTML and JS code together, which can make your code harder to rean and maintain.
 Inline event handlers are not recommended for use in modern JS.
 Its better to use addEventListener()
+
+Manipulate styles using Element.style and Element.classList
+The Element.style property is a read-only property that represents the inline style of an element. You can use this property to get or set the style of an element.
