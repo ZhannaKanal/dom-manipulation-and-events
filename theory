@@ -244,3 +244,4 @@ another way to use inline event handlers is to call a function that is defined i
     document.body.style.backgroundColor = "lightblue"
   }
 </script>
+Inline event handlers can only be used to attach one event listener to an element. If you want to attach multiple event listeners to the same element, you will need to use addEvenListener().
