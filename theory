@@ -254,3 +254,4 @@ The Element.style property is a read-only property that represents the inline st
 <p id="para">This is a para</p>
 const paraEl = document.getElementById("para")
 paraEl.style.color = "red"
+style property can be used to set many CSS properties, such as color, background-color, font-size, font-weight, and so on.
