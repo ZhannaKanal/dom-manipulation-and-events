@@ -343,3 +343,9 @@ function animate(){
   requestAnimationFrame(animate);
 }
 The update() function is where the magic happens. Inside it, you get to change whatever you want to animate. F/e: updating a style or changing the position of an element.
+function update(){
+  element.style.transform = `translateX(${position}px)`
+  position +=2;
+}
+What finally kicks off the animation is calling requestAnimationFrame() and passing in the animate function, this time outside the animate function
+The loop will continue until you stop it.
