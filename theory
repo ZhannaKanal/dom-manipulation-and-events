@@ -321,3 +321,6 @@ clearInterval() takes the ID of the setInterval() you want to stop.
 This could be a variable you assign to interval to.
 const interValID = setInterval(()=>{console.log("This will stop after 5 seconds")}, 1000);
 setTimeout(()=>{clearInterval(intervalId)},5000)
+you can also stop a timeout with the clearTimeout() method
+let timeoutID = setTimeout(()=>{console.log("this wont run")}, 5000)
+clearTimeout(timeoutID)
