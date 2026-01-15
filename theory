@@ -260,3 +260,24 @@ const paraEl = document.getElementById("para")
 paraEl.classList.add("highlight"); // we are adding class highlight to paragraph with id para
 classList.add("class1", "class2", "class3"); //you can also add multiple classes
 classList.remove("highlight"); // you can remove class from an element 
+classList.toggle() // to toggle a class on an element
+<button id="toggle-btn">Toggle Menu</button>
+<nav id="menu" class="menu">
+  <ul>
+    <li>Home</li>
+  </ul>
+</nav>
+.menu {
+  display: none;
+  background-color: lightgray;
+  width: 50%;
+  padding: 10px;
+}
+
+.menu.show {
+  display: block;
+}
+const menu = document.getElementById("menu");
+const toggleBtn = document.getElementById("toggle-btn");
+
+toggleBtn.addEventListener("click", () => menu.classList.toggle("show"));
