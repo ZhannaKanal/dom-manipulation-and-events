@@ -333,3 +333,7 @@ btn.addEventListener("click", ()=>{
 
 requestAnimationFrame() API, how can it be used to Set Up an Animation Loop
 is a method that allows you to schedule the next step of your animation before the next screen repaint, resulting in a fluid and visually appealing experience.
+The next screen repaint refers to the moment when the browser reffreshes the visual display of the web page. This happens multiple times per second, typically around 60 times on most displays.
+To use method you need to call it and pass a callback function into it.
+Syntax
+requestAnimationFrame(callback)
