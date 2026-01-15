@@ -296,3 +296,11 @@ if (document.readyState === "loading") {
   changeImg();
 }
 //this code makes sure that the function changeImg() runs only after the HTML document is fully loaded and parsed, no matter when the script itself is executed.
+
+setTimeout and setInterval methods
+both methods accept two parameters: a function and a delay
+setTimeout() lets you delay an action for a specified time. 
+Syntax
+setTimeout(functionToRun, delay)
+functionToRun is the code you want to execute after a specified delay, 
+delay is the time to wait before running the function.
