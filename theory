@@ -281,3 +281,5 @@ const menu = document.getElementById("menu");
 const toggleBtn = document.getElementById("toggle-btn");
 
 toggleBtn.addEventListener("click", () => menu.classList.toggle("show"));
+when user clicks on the button, the show class will be added to the .menu element, and the menu element will be displayed.
+If user clicks again, the show will be removed from .menu, and menu will be hidden.
