@@ -309,3 +309,7 @@ setTimeout(function(){
 }, 3000)
 you can also use an arrow function for the callback
 setTimeout(()=>{console.log("This runs in 3 seconds")}, 3000)
+setInterval() keeps repeating a function at a set interval.
+It's like an alarm that goes off every few seconds, it's useful when you want smth to happen over and over again.
+Syntax
+setInterval(functionToRun, delay)
