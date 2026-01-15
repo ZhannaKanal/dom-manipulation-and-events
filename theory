@@ -337,3 +337,9 @@ The next screen repaint refers to the moment when the browser reffreshes the vis
 To use method you need to call it and pass a callback function into it.
 Syntax
 requestAnimationFrame(callback)
+calling requestAnimationFrame() must first occur inside a function that handles the animation, such as animate(), along with a function to update the animation, traditionally called update()
+function animate(){
+  update()
+  requestAnimationFrame(animate);
+}
+The update() function is where the magic happens. Inside it, you get to change whatever you want to animate. F/e: updating a style or changing the position of an element.
