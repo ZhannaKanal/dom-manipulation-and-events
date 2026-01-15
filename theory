@@ -316,3 +316,8 @@ setInterval(functionToRun, delay)
 functionToRun is the code you want to run repeatedly, 
 delay is the time in milliseconds between each execution of that function.
 setInterval(()=>{console.log("This repeats every 3 seconds")}, 3000)
+If you want to stop it, you have to use the clearInterval() method.
+clearInterval() takes the ID of the setInterval() you want to stop.
+This could be a variable you assign to interval to.
+const interValID = setInterval(()=>{console.log("This will stop after 5 seconds")}, 1000);
+setTimeout(()=>{clearInterval(intervalId)},5000)
