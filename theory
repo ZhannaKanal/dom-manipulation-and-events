@@ -284,3 +284,4 @@ If user clicks again, the show will be removed from .menu, and menu will be hidd
 
 DOMContentLoaded Event 
 is fired when everything in the HTML document has been loaded and pardsed. If you have external stylesheets or images, the DOMContentLoaded event will not wait for those to be loaded. It will only wait for the HTML to be loaded.
+this differs from the load event, which waits for everything to be loaded, including external stylesheets, images and so on.
