@@ -304,3 +304,6 @@ Syntax
 setTimeout(functionToRun, delay)
 functionToRun is the code you want to execute after a specified delay, 
 delay is the time to wait before running the function.
+setTimeout(function(){
+  console.log("This runs in 3 seconds")
+}, 3000)
