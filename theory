@@ -307,3 +307,5 @@ delay is the time to wait before running the function.
 setTimeout(function(){
   console.log("This runs in 3 seconds")
 }, 3000)
+you can also use an arrow function for the callback
+setTimeout(()=>{console.log("This runs in 3 seconds")}, 3000)
