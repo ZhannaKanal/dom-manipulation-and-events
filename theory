@@ -324,3 +324,12 @@ setTimeout(()=>{clearInterval(intervalId)},5000)
 you can also stop a timeout with the clearTimeout() method
 let timeoutID = setTimeout(()=>{console.log("this wont run")}, 5000)
 clearTimeout(timeoutID)
+More elegant way to do it is through DOM, by adding event listener to a button
+const btn = document.getElementById("cancelButton")
+btn.addEventListener("click", ()=>{
+  clearTimeout(timeoutID)
+  console.log("Timeout canceled.")
+})
+
+requestAnimationFrame() API, how can it be used to Set Up an Animation Loop
+is a method that allows you to schedule the next step of your animation before the next screen repaint, resulting in a fluid and visually appealing experience.
