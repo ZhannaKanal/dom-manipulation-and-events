@@ -313,3 +313,6 @@ setInterval() keeps repeating a function at a set interval.
 It's like an alarm that goes off every few seconds, it's useful when you want smth to happen over and over again.
 Syntax
 setInterval(functionToRun, delay)
+functionToRun is the code you want to run repeatedly, 
+delay is the time in milliseconds between each execution of that function.
+setInterval(()=>{console.log("This repeats every 3 seconds")}, 3000)
