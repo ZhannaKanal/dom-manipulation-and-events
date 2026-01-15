@@ -259,3 +259,4 @@ The Element.ClassList is a read-only property that can be used to add, remove, o
 const paraEl = document.getElementById("para")
 paraEl.classList.add("highlight"); // we are adding class highlight to paragraph with id para
 classList.add("class1", "class2", "class3"); //you can also add multiple classes
+classList.remove("highlight"); // you can remove class from an element 
