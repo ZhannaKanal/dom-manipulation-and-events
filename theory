@@ -285,3 +285,14 @@ If user clicks again, the show will be removed from .menu, and menu will be hidd
 DOMContentLoaded Event 
 is fired when everything in the HTML document has been loaded and pardsed. If you have external stylesheets or images, the DOMContentLoaded event will not wait for those to be loaded. It will only wait for the HTML to be loaded.
 this differs from the load event, which waits for everything to be loaded, including external stylesheets, images and so on.
+Syntax
+document.addEventListener("DOMContentLoaded", function(){
+  console.log("DOM is Loaded.")
+}) //Once DOM is loaded, the function will be executed and the msg Dom is loaded, will be logged to the console.
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", changeImg);
+} else {
+  console.log("DOMContentLoaded has already fired");
+  changeImg();
+}
+//this code makes sure that the function changeImg() runs only after the HTML document is fully loaded and parsed, no matter when the script itself is executed.
