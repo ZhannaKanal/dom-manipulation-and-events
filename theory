@@ -258,3 +258,4 @@ style property can be used to set many CSS properties, such as color, background
 The Element.ClassList is a read-only property that can be used to add, remove, or toggle classes on an element.
 const paraEl = document.getElementById("para")
 paraEl.classList.add("highlight"); // we are adding class highlight to paragraph with id para
+classList.add("class1", "class2", "class3"); //you can also add multiple classes
