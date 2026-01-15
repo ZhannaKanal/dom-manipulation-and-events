@@ -273,13 +273,14 @@ classList.toggle() // to toggle a class on an element
   width: 50%;
   padding: 10px;
 }
-
 .menu.show {
   display: block;
 }
 const menu = document.getElementById("menu");
 const toggleBtn = document.getElementById("toggle-btn");
-
 toggleBtn.addEventListener("click", () => menu.classList.toggle("show"));
 when user clicks on the button, the show class will be added to the .menu element, and the menu element will be displayed.
 If user clicks again, the show will be removed from .menu, and menu will be hidden.
+
+DOMContentLoaded Event 
+is fired when everything in the HTML document has been loaded and pardsed. If you have external stylesheets or images, the DOMContentLoaded event will not wait for those to be loaded. It will only wait for the HTML to be loaded.
