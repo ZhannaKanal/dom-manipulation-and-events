@@ -349,3 +349,6 @@ function update(){
 }
 What finally kicks off the animation is calling requestAnimationFrame() and passing in the animate function, this time outside the animate function
 The loop will continue until you stop it.
+
+Web Animations API, and how does it relate to CSS Animation properties
+WAAPI allows you to create and control animations directly within JS. With WAAPI you can work with animations more dynamically, making it easier to manipulate them.
