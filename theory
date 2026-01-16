@@ -354,3 +354,22 @@ Web Animations API, and how does it relate to CSS Animation properties
 WAAPI allows you to create and control animations directly within JS. With WAAPI you can work with animations more dynamically, making it easier to manipulate them.
 At the core of WAAPI is the Animation constructor, which provides several instance methods and properties that allow you to dynamically animate elements.
 A significant method in the Animation constructor is animate(). It allows you to create an animation by specifying keyframes and options like duration, direction, easing, iterations.
+Syntax 
+element.animate(keyframes, options);
+<div id="square" class="square"></div>
+.square {
+  background: #1b1b32;
+  width: 10rem;
+  aspect-ratio: 1/1;
+}
+const square = document.querySelector("#square")
+const animation = square.animate(
+  [{transform: "translateX(0px)" }, {transform: "translateX(100px)"}],
+  {
+    duration: 2000, // makes animation lasts 2 seconds
+    iterations: Infinity, // loops indefinetely
+    direction: "alternate", //move back and forth
+    easing: "ease-in-out" //smooth easing
+  }
+)
+The result in the browser will be a blue square moving back and forth hotizontally.
