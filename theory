@@ -352,3 +352,5 @@ The loop will continue until you stop it.
 
 Web Animations API, and how does it relate to CSS Animation properties
 WAAPI allows you to create and control animations directly within JS. With WAAPI you can work with animations more dynamically, making it easier to manipulate them.
+At the core of WAAPI is the Animation constructor, which provides several instance methods and properties that allow you to dynamically animate elements.
+A significant method in the Animation constructor is animate(). It allows you to create an animation by specifying keyframes and options like duration, direction, easing, iterations.
