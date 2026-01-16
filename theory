@@ -379,3 +379,13 @@ pause()
 reverse()
 finish()
 cancel()
+The instance properties include
+playbackRate
+currentTime
+startTime
+effect
+timeline 
+playState
+finished 
+onfinish
+oncancel
