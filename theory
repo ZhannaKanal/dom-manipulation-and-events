@@ -442,3 +442,9 @@ const canvas = document.getElementById("my-canvas")
 const ctx = canvas.getContext("2d");
 ctx.fillStrule = "crimson" // set bg color
 ctx.fillRect(1,1,150,100) // draw a rectangle
+fillRect takes 4 number values, x axis, y axis, width, height
+you can also draw text or create an animation.
+ctx.font = "30px Arial"
+ctx.fillStyle = "crimson"
+ctx.fillText("Hello Canvas", 1, 50)
+the result in the browser will be the red text Hello Canvas.
