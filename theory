@@ -422,3 +422,6 @@ Canvas API
 is a powerful tool that lets manipulate graphics right inside your JS file.
 Everything begins with canvas element in HTML.
 This element serves as a drawing surface that you can manipulate using the instance methods and properties of the Canvas API.
+The Canvas API provides everything you need to create amazing visuals, including shapes, text, animations and even complex games.
+It has interfaces like HTMLCanvasElement, CanvasRenderingContext2D, CanvasGradient, CanvasPattern, TextMetrics which provides methods and properties you can use to create graphics in your JS file.
+ 
