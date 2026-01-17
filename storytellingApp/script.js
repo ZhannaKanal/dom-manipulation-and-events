@@ -23,3 +23,7 @@ const storyObj = {
     borderColor: "#acd157",
   },
 };
+
+const displayStory = () => {
+  console.log("You clicked the button")
+}
