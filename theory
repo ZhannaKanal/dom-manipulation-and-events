@@ -453,3 +453,6 @@ Open and close Dialog elements using JS
 With HTMl dialog element, you can easily create these dialogs(both modal and non-modal dialogs) in web apps.
 A modal dialog is a type of dialog that forces the user to interact with it before thay can access the rest of the application or webpage.
 It effectively blocks interaction with other content until the user completes an action, such as closing dialog or submitting a form.
+A non-modal dialog allows the user to cocntinue interacting with other parts of the page or application even when the dialog is open. It doesnt prevent access to the rest of the content.
+showModal() method will add a backtop to the other items on the page and disable them. This is ideal for modals that display forms, confirmations, and critical information that requires user action.
+You can use it when you want to make sure the user focuses on a specific action or message of a modal, you can open the modal dialog.
