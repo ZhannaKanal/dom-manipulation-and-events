@@ -456,3 +456,7 @@ It effectively blocks interaction with other content until the user completes an
 A non-modal dialog allows the user to cocntinue interacting with other parts of the page or application even when the dialog is open. It doesnt prevent access to the rest of the content.
 showModal() method will add a backtop to the other items on the page and disable them. This is ideal for modals that display forms, confirmations, and critical information that requires user action.
 You can use it when you want to make sure the user focuses on a specific action or message of a modal, you can open the modal dialog.
+<dialog id="modal"><p>This is a modal dialog.</p></dialog>
+const dialog = document.getElementById("modal")
+dialog.showModal();
+the result in the browser will show a modal with the text This is a modal dialog.
