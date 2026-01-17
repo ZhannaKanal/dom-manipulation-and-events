@@ -430,3 +430,8 @@ or you can do it
 const canvas = document.getElementById("my-canvas")
 canvas.width = 400;
 canvas.height = 400;
+after creating canvas element, you need to get access to the drawing context of the canvas with the getContext() method of the HTMLCanvasElement interface.
+the most common context is 2d, which allows you to draw in two dimensions:
+const ctx = canvas.getContext('2d')
+if you log ctx to the console, you'll see the methods and properties of CanvasRenderingContext2D that you can use to create shepes, colors, lines, and more, along with their default values.
+conosle.log(ctx)
