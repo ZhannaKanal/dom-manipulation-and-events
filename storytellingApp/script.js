@@ -25,6 +25,6 @@ const storyObj = {
 };
 
 function displayStory() {
-    console.log("You clicked the button");
+   
 }
 scaryStoryBtn.addEventListener("click", displayStory)
