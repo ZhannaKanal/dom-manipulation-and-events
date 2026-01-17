@@ -434,4 +434,11 @@ after creating canvas element, you need to get access to the drawing context of 
 the most common context is 2d, which allows you to draw in two dimensions:
 const ctx = canvas.getContext('2d')
 if you log ctx to the console, you'll see the methods and properties of CanvasRenderingContext2D that you can use to create shepes, colors, lines, and more, along with their default values.
-conosle.log(ctx)
+console.log(ctx)
+Once you have the 2D context, you can start drawing on the canvas.
+fillStyle property, you can combine with the fillRect() method to draw a rectangle or square.
+<canvas id="my-canvas" width="400" height="400"></canvas>
+const canvas = document.getElementById("my-canvas")
+const ctx = canvas.getContext("2d");
+ctx.fillStrule = "crimson" // set bg color
+ctx.fillRect(1,1,150,100) // draw a rectangle
