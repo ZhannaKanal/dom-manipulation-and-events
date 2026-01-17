@@ -460,3 +460,18 @@ You can use it when you want to make sure the user focuses on a specific action 
 const dialog = document.getElementById("modal")
 dialog.showModal();
 the result in the browser will show a modal with the text This is a modal dialog.
+If you needed to show a dialog while still allowing interaction with content outside of the dialog, then you can use the show() method.
+<dialog id="modal">
+  <p>This is a modal dialog.</p>
+</dialog>
+const dialog = document.getElementById("modal");
+dialog.show();
+To close a modal, you can add a button to the modal inside the dialog element and use the close() method.
+const openButton = document.getElementById("open-modal-btn");
+const closeButton = document.getElementById("close-modal-btn");
+openButton.addEventListener("click", () => {
+  dialog.show();
+});
+closeButton.addEventListener("click", () => {
+  dialog.close();
+});
