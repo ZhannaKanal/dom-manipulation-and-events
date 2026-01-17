@@ -31,4 +31,3 @@ if(storyObj.hasOwnProperty(genre)){
 
 scaryStoryBtn.addEventListener("click", displayStory);
 
-console.log(displayStory("scary"))
