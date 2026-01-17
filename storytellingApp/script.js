@@ -10,7 +10,7 @@ const storyObj = {
   scary: {
     story: `In the dark woods, a group of friends stumbled upon an old, abandoned cabin. They enter the cabin and awaken something malevolent that had been dormant for centuries.`,
     borderColor: "#ee4b2b",
-  },
+},
   funny: {
     story: `During a camping trip, Mark decided to show off his culinary skills by cooking dinner over an open fire. However, his attempt caused him to burn the dinner as well as his eyebrows off.`,
     borderColor: "#f1be32",
@@ -22,12 +22,13 @@ const storyObj = {
 };
 
 function displayStory(genre) {
-  
-if(storyObj.hasOwnProperty(genre)){
-  result.textContent = storyObj[genre].story;
-  storyContainer.style.borderColor = storyObj[genre].borderColor
-}
+  if (storyObj.hasOwnProperty(genre)) {
+    resultParagraph.textContent = storyObj[genre].story;
+    storyContainer.style.borderColor = storyObj[genre].borderColor;
+  }
 }
 
-scaryStoryBtn.addEventListener("click", displayStory);
+scaryStoryBtn.addEventListener("click", ()=>displayStory("scary"));
+funnyStoryBtn.addEventListener("click", ()=>displayStory("funny"));
+adventureStoryBtn.addEventListener("click", ()=>displayStory("adventure"));
 
