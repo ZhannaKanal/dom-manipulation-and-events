@@ -417,3 +417,8 @@ pauseBtn.addEventListener("click", ()=>{
 The result in the browser will show the blue box moving from left to right when the play button is clicked.
 The difference is that you can control the animations you create with the animate() method more directly and dynamically, but with CSS animations, you need to do way more by defining custom styles and triggering tham inside your JS code.
 CSS animation is ideal for simple and declarative animations that run automatically. Those include hover effects, transitions or animations that dont need much interaction once triggered. If your animation needs to respond to user interactions like clicks, scrolls, or you want the user to be able to pause,reverse, or change speed dynamically, WAAPI is the better choice.
+
+Canvas API
+is a powerful tool that lets manipulate graphics right inside your JS file.
+Everything begins with canvas element in HTML.
+This element serves as a drawing surface that you can manipulate using the instance methods and properties of the Canvas API.
