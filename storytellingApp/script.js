@@ -24,7 +24,7 @@ const storyObj = {
   },
 };
 
-function displayStory() {
+function displayStory(genre) {
    
 }
 scaryStoryBtn.addEventListener("click", displayStory)
