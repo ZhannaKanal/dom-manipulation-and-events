@@ -448,3 +448,8 @@ ctx.font = "30px Arial"
 ctx.fillStyle = "crimson"
 ctx.fillText("Hello Canvas", 1, 50)
 the result in the browser will be the red text Hello Canvas.
+
+Open and close Dialog elements using JS
+With HTMl dialog element, you can easily create these dialogs(both modal and non-modal dialogs) in web apps.
+A modal dialog is a type of dialog that forces the user to interact with it before thay can access the rest of the application or webpage.
+It effectively blocks interaction with other content until the user completes an action, such as closing dialog or submitting a form.
