@@ -1,0 +1,1 @@
+const happyBtn = document.querySelector("#happy-btn")
