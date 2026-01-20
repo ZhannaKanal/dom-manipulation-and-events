@@ -9,6 +9,7 @@ function updateCount(btn) {
   countEl.textContent = `${currCount}/10`;
 }
 
-
 const btns = document.querySelectorAll(".emoji-btn");
-
+btns.forEach(btn=>btn.addEventListener("click",(btn)=>{
+  updateCount(btn)
+}))
