@@ -1,12 +1,16 @@
 const happyBtn = document.querySelector("#happy-btn");
 
 happyBtn.addEventListener("click", () => {
-  const countEl = happyBtn.querySelector(".count");
+  updateCount(happyBtn)
+})
+const updateCount = buttonEl => {
+  const countEl = buttonEl.querySelector(".count");
   let currCount = +countEl.textContent.split("/")[0];
-  if (currCount === 10) {
-    return;
-  } else {
-    currCount += 1;
-    countEl.textContent = currCount + "/10";
-  }
-});
+
+  if (currCount === 10) return;
+
+  currCount++;
+
+  countEl.textContent = `${currCount}/10`;
+}
+
