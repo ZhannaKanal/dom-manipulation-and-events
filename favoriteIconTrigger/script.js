@@ -1,3 +1,6 @@
 const favoriteIcon = document.querySelectorAll(".favorite-icon");
 
-favoriteIcon.addEventlistener("click", () => {});
+favoriteIcon.forEach(
+  button => {
+  }
+)
