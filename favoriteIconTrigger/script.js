@@ -1,4 +1,5 @@
 const favoriteIcon = document.querySelectorAll(".favorite-icon");
+favoriteIcon.forEach(button=>button.innerHTML = "&#9825" )
 
 favoriteIcon.forEach(
   button => {
