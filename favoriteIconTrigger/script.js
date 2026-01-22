@@ -1,3 +1,3 @@
-const favoriteIcon = document.getElementById("favorite-icon");
+const favoriteIcon = document.querySelectorAll(".favorite-icon");
 
 favoriteIcon.addEventlistener("click", () => {});
