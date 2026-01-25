@@ -8,18 +8,27 @@ const instrumentsArr = [
   { category: "percussion", instrument: "Drum Set", price: 500 },
   { category: "percussion", instrument: "Xylophone", price: 3000 },
   { category: "percussion", instrument: "Cymbals", price: 200 },
-  { category: "percussion", instrument: "Marimba", price: 3000 }
-]
+  { category: "percussion", instrument: "Marimba", price: 3000 },
+];
 
 const selectContainer = document.querySelector("select");
 const productsContainer = document.querySelector(".products-container");
 function instrumentCards(instrumentCategory) {
-  if(instrumentCategory ==="all"){
-    return instrumentsArr;
+  const instruments =
+    instrumentCategory === "all"
+      ? instrumentsArr
+      : instrumentsArr.filter(
+          ({ category }) => category === instrumentCategory,
+        );
+  let cardsHTML = [];
+  for (let i = 0; i < instruments.length; i++) {
+    cardsHTML.push(
+      `<div class="card"><h2>${instruments[i].instrument}</h2><p>$${instruments[i].price}</p></div>`,
+    );
   }
-  return instrumentsArr.filter((item)=>item.category===instrumentCategory)
+  return cardsHTML;
 }
 
 selectContainer.addEventListener("change", () => {
-  console.log(instrumentCards(selectContainer.value));
+  instrumentCards(selectContainer.value);
 });
