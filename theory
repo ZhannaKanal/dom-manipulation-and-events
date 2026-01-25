@@ -493,3 +493,7 @@ selectMenu.addEventListener("change", (event)=>{
 Each time the user selects a different option from the dropdown menu, the change event will fire, and the selected value will be logged to the console.
 The change event still generates an Event object, but unlike most other events it does not generate a custom implementation - the only properties and methods you will have access to are those on the base Event object.
 This differs from the input event, which generates a dedicated InputEvent object. The change event also differs in a few ways. An input event WILL trigger when a user types content into a field.
+
+Event Bubbling and Event Delegation
+Event bubbling or propagination refers to how an event "bubbles up" to parent object when triggered.
+Event delegation can be throught of as the opposite. It's the process of taking a captured event and delegating it to another element.
