@@ -8,8 +8,8 @@ const instrumentsArr = [
   { category: "percussion", instrument: "Drum Set", price: 500 },
   { category: "percussion", instrument: "Xylophone", price: 3000 },
   { category: "percussion", instrument: "Cymbals", price: 200 },
-  { category: "percussion", instrument: "Marimba", price: 3000 },
-];
+  { category: "percussion", instrument: "Marimba", price: 3000 }
+]
 
 const selectContainer = document.querySelector("select");
 const productsContainer = document.querySelector(".products-container");
@@ -18,17 +18,19 @@ function instrumentCards(instrumentCategory) {
     instrumentCategory === "all"
       ? instrumentsArr
       : instrumentsArr.filter(
-          ({ category }) => category === instrumentCategory,
+          ({ category }) => category === instrumentCategory
         );
-  let cardsHTML = [];
-  for (let i = 0; i < instruments.length; i++) {
-    cardsHTML.push(
-      `<div class="card"><h2>${instruments[i].instrument}</h2><p>$${instruments[i].price}</p></div>`,
-    );
-  }
-  return cardsHTML;
-}
 
+  return instruments
+    .map(({ instrument, price }) => {
+      return `
+          <div class="card">
+            <h2>${instrument}</h2>
+            <p>$${price}</p>
+          </div>
+        `;
+    })
+}
 selectContainer.addEventListener("change", () => {
-  productsContainer.innerHTML = instrumentCards(selectContainer.value);
+  productsContainer.innerHTML = instrumentCards(selectContainer.value).join("");
 });
