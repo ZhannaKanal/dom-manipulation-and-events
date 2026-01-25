@@ -13,6 +13,7 @@ const instrumentsArr = [
 
 const selectContainer = document.querySelector("select");
 const productsContainer = document.querySelector(".products-container");
-selectContainer.addEventListener("change", (event) => {
-  console.log(event.target.value);
+
+selectContainer.addEventListener("change", () => {
+  console.log(selectContainer.value);
 });
