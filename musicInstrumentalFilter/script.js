@@ -14,6 +14,8 @@ const instrumentsArr = [
 const selectContainer = document.querySelector("select");
 const productsContainer = document.querySelector(".products-container");
 
+const instrumentCards = param =>{}
+
 selectContainer.addEventListener("change", () => {
   console.log(selectContainer.value);
 });
