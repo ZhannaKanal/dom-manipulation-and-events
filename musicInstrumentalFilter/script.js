@@ -13,9 +13,13 @@ const instrumentsArr = [
 
 const selectContainer = document.querySelector("select");
 const productsContainer = document.querySelector(".products-container");
-
-const instrumentCards = param =>{}
+function instrumentCards(instrumentCategory) {
+  if(instrumentCategory ==="all"){
+    return instrumentsArr;
+  }
+  return instrumentsArr.filter((item)=>item.category===instrumentCategory)
+}
 
 selectContainer.addEventListener("change", () => {
-  console.log(selectContainer.value);
+  console.log(instrumentCards(selectContainer.value));
 });
