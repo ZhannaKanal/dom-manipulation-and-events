@@ -477,3 +477,5 @@ closeButton.addEventListener("click", () => {
 });
 
 Change Event
+is a special event which is fired when the user modifies the value of certain input elements. More specifically:
+when a checkbox is ticked or unticked; when a radio button is ticked; when the user makes a selection from something like a date or dropdown menu; when an input loses focus(the user tabs to the next field, or clicks out of the form) after the user has changed the value; when the user otherwise confirms the value, such as by hitting enter after typing some text.
