@@ -10,4 +10,7 @@ galleryItem.forEach((item) => {
   closeBtn.addEventListener("click", () => {
     lightbox.style.display = "none";
   });
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
 });
