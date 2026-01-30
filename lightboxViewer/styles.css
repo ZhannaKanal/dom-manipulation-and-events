@@ -3,7 +3,14 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  display: none; 
+  display: none;
   top: 0;
   left: 0;
+}
+.gallery {
+  display: flex;
+  gap: 12px;
+}
+.gallery-item {
+  width: 450px;
 }
