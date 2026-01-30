@@ -4,4 +4,6 @@ const lightboxImage = document.getElementById("lightbox-image");
 
 galleryItem.forEach((item) => {
   item.addEventListener("click", () => (lightbox.style.display = "flex"));
+  const fullSrc = item.src.replace("-thumbnail", "");
+  lightboxImage.src = fullSrc;
 });
