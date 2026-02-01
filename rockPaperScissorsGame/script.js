@@ -1,7 +1,3 @@
-// const rockBtn = document.getElementById("rock-btn")
-// const paperBtn = document.getElementById("paper-btn")
-// const scissorsBtn = document.getElementById("scissors-btn")
-
 const options = ["Rock", "Paper", "Scissors"];
 
 function getRandomComputerResult() {
@@ -41,3 +37,7 @@ function showResults(userOption) {
   computerScoreSpanElement.innerText = computerScore;
   playerScoreSpanElement.innerText = playerScore;
 };
+
+const rockBtn = document.getElementById("rock-btn");
+const paperBtn = document.getElementById("paper-btn");
+const scissorsBtn = document.getElementById("scissors-btn");
