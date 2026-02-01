@@ -1,13 +1,7 @@
 // const rockBtn = document.getElementById("rock-btn")
 // const paperBtn = document.getElementById("paper-btn")
 // const scissorsBtn = document.getElementById("scissors-btn")
-// const arr = [
-//   "rock", "paper", "scissors"
-// ]
 
-// const computerChoice = () => {
-//   return arr[Math.floor(Math.random() * 3)]
-// }
 // let playerScore = 0;
 // rockBtn.addEventListener("click", () => {
 //   console.log(computerChoice());
@@ -19,3 +13,8 @@
 //   }
 // })
 const options = ["Rock", "Paper", "Scissors"];
+
+function getRandomComputerResult() {
+  const randomIndex = Math.floor(Math.random() * options.length);
+  return options[randomIndex];
+}
