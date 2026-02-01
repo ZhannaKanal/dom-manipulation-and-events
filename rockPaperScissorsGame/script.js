@@ -15,3 +15,6 @@ function hasPlayerWonTheRound(playerChoice, computerChoice) {
     (playerChoice === "Paper" && computerChoice === "Rock")
   );
 }
+
+let playerScore = 0;
+let computerScore = 0;
