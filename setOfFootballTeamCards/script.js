@@ -25,3 +25,11 @@ const footballTeam = {
     },
   ],
 };
+
+const team = document.getElementById("team");
+const year = document.getElementById("year");
+const headCoach = document.getElementById("head-coach");
+
+team.innerText = `${footballTeam.team}`;
+year.innerText = `${footballTeam.year}`;
+headCoach.innerText = `${footballTeam.headCoach}`;
