@@ -8,5 +8,20 @@ const footballTeam = {
       position: "forward",
       isCaptain: true,
     },
+    {
+      name: "Sergio Batista",
+      position: "midfielder",
+      isCaptain: true,
+    },
+    {
+      name: "",
+      position: "defender",
+      isCaptain: true,
+    },
+    {
+      name: "",
+      position: "goalkeeper",
+      isCaptain: true,
+    },
   ],
 };
