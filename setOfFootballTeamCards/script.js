@@ -35,3 +35,13 @@ const select = document.getElementById("players");
 team.innerText = `${footballTeam.team}`;
 year.innerText = `${footballTeam.year}`;
 headCoach.innerText = `${footballTeam.headCoach}`;
+
+const renderPlayers = (players) => {
+  playerCards.innerHTML = "";
+  players.forEach((i) => {
+    playerCards.innerHTML += `<div class="player-card">
+  <h2> ${i.isCaptain ? "(Captain)" : ""} ${i.name}</h2>
+  <p>Position: ${i.position}</p>
+</div>`;
+  });
+};
