@@ -29,6 +29,8 @@ const footballTeam = {
 const team = document.getElementById("team");
 const year = document.getElementById("year");
 const headCoach = document.getElementById("head-coach");
+const playerCards = document.getElementById("player-cards");
+const select = document.getElementById("players");
 
 team.innerText = `${footballTeam.team}`;
 year.innerText = `${footballTeam.year}`;
