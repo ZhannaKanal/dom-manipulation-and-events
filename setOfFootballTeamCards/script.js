@@ -50,5 +50,7 @@ select.addEventListener("change", (e) => {
   const value = e.target.value;
   if (value === "all") {
     renderPlayers(footballTeam.players);
+  } else {
+    renderPlayers(footballTeam.players.filter((i) => i.position === value));
   }
 });
